@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fc59211-f7f1-4dd1-bf1c-09c7ad8815fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pokedex/public/icon-search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/public/pokemon-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/public/pokemon-lunatone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/public/pokemon-solrock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Icons.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Navabar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/hooks/usePokemones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2xI3yXpQFM6cftsXNxj3ohg3qcg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/osler/Desktop/Code/Projects/pokedex-react-pokeapi/pokedex/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.JavaScript",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\osler\Desktop\Code\Projects\pokedex-react-pokeapi\pokedex\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\osler\Desktop\Code\Projects\pokedex-react-pokeapi\pokedex\src\components\Pokemones" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fc59211-f7f1-4dd1-bf1c-09c7ad8815fd" name="Changes" comment="" />
+      <created>1747612015265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747612015265</updated>
+      <workItem from="1747612016579" duration="89000" />
+      <workItem from="1747612114014" duration="4381000" />
+      <workItem from="1747635628912" duration="6921000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
