@@ -29,9 +29,7 @@ export default function Pokemones() {
 	const { pokemones, morePokemones, showScroll, searchPokemon} = usePokemones();
 	const [isPokemonDetailsOpen, setIsPokemonDetailsOpen] = useState({
 		show: false,
-		pokemon: {
-
-		}
+		pokemon: {}
 	});
 	const [search, setSearch] = useState("");
 
@@ -52,7 +50,6 @@ export default function Pokemones() {
 
 	/*  Move useEffect() and fetchInfoPokemones() into the
 			custom hook.  */
-
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		// to avoid page reload
@@ -92,21 +89,6 @@ export default function Pokemones() {
 					))}
 				</ol>
 			</InfiniteScroll>
-
-			{/*<section className="pokemon-container">*/}
-			{/*	<ol className="pokemon-container-list">*/}
-			{/*		{pokemones.map((pokemon) => (*/}
-			{/*			<li key={pokemon.id}>*/}
-			{/*				<Pokemon {...pokemon} />*/}
-			{/*			</li>*/}
-			{/*		))}*/}
-			{/*	</ol>*/}
-			{/*	<button*/}
-			{/*		className="search-button m-auto px-4 py-2 mb-8 bg-gray-800 text-gray-200 flex flex-row rounded-lg px-4 hover:scale-110 transition-all ease-in-out"*/}
-			{/*		onClick={morePokemones}>*/}
-			{/*		Show more Pokemons*/}
-			{/*	</button>*/}
-			{/*</section>*/}
 		</>
 	)
 }

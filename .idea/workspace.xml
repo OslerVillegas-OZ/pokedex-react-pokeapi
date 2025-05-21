@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc59211-f7f1-4dd1-bf1c-09c7ad8815fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pokedex/public/pokeball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Loader/Loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Loader/Loader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/components/PokemonDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/src/components/Navabar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.css" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/SearchBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/src/hooks/usePokemones.js" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/hooks/usePokemones.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/index.css" afterDir="false" />
-    </list>
+    <list default="true" id="8fc59211-f7f1-4dd1-bf1c-09c7ad8815fd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +67,7 @@
       <workItem from="1747612114014" duration="4381000" />
       <workItem from="1747635628912" duration="6921000" />
       <workItem from="1747677541802" duration="31190000" />
-      <workItem from="1747848193563" duration="1044000" />
+      <workItem from="1747848193563" duration="1291000" />
     </task>
     <servers />
   </component>
