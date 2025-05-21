@@ -4,4 +4,23 @@
 
 :root {
 	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+	--color-bg: #fff;
+	--color-txt: #111;
+	--color-card: #eee;
+	--color-decoration: #ccc;
 }
+
+[class='dark'] {
+	--color-bg: #111;
+	--color-txt: #eee;
+	--color-card: darkgray;
+	--color-decoration: lightgrey;
+}
+
+.App {
+	background: var(--color-bg);
+	color: var(--color-txt);
+	transition: all 500ms ease-in-out;
+}
+

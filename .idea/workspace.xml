@@ -5,17 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fc59211-f7f1-4dd1-bf1c-09c7ad8815fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pokedex/public/icon-search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/public/pokemon-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/public/pokemon-lunatone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/public/pokemon-solrock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Icons.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Navabar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pokedex/src/hooks/usePokemones.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/public/pokeball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Loader/Loader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/components/Loader/Loader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pokedex/src/components/PokemonDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/src/components/Navabar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.css" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/Pokemones/Pokemones.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/components/SearchBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/src/hooks/usePokemones.js" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/hooks/usePokemones.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokedex/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,28 +38,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/osler/Desktop/Code/Projects/pokedex-react-pokeapi/pokedex/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.JavaScript",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oz.villegas/Documents/Github Desktop/Projects/pokedex-react-pokeapi/pokedex/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.JavaScript&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2025.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oz.villegas\Documents\Github Desktop\Projects\pokedex-react-pokeapi\pokedex\public" />
       <recent name="C:\Users\osler\Desktop\Code\Projects\pokedex-react-pokeapi\pokedex\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oz.villegas\Documents\Github Desktop\Projects\pokedex-react-pokeapi\pokedex\src\components\Loader" />
       <recent name="C:\Users\osler\Desktop\Code\Projects\pokedex-react-pokeapi\pokedex\src\components\Pokemones" />
     </key>
   </component>
@@ -76,6 +82,8 @@
       <workItem from="1747612016579" duration="89000" />
       <workItem from="1747612114014" duration="4381000" />
       <workItem from="1747635628912" duration="6921000" />
+      <workItem from="1747677541802" duration="31190000" />
+      <workItem from="1747848193563" duration="1044000" />
     </task>
     <servers />
   </component>
