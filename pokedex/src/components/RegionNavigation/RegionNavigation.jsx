@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import pokeData from "../data/pokemonData";
+import pokeData from "../../data/pokemonData";
+import classes from './RegionNavigation.module.css'
 
 function RegionNavigation() {
 	return (

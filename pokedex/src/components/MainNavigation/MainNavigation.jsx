@@ -11,6 +11,7 @@ function MainNavigation() {
 							<NavLink
 								to="/"
 								className={({ isActive }) => (isActive ? "active" : undefined)}
+								end
 							>
 								Home
 							</NavLink>
@@ -18,7 +19,7 @@ function MainNavigation() {
 						<li>
 							<NavLink
 								to="/region"
-								className={({ isActive }) => (isActive ? "active" : undefined)}
+								className={({ isActive }) => (isActive ? "active" : undefined) }
 								style={({isActive}) => ({
 									display: 'block',
 									pointerEvents: isActive ? 'none' : 'auto'

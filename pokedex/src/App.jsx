@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import RootLayout from "./pages/Root.jsx";
 import HomePage from "./pages/HomePage.jsx";
-import GenerationPage from "./Pages/GenerationPage.jsx";
+import GenerationPage, { loader as evetGeneationLoader } from "./Pages/GenerationPage.jsx";
 import RegionPage from "./pages/RegionPage.jsx";
 import RegionRootLayout from "./pages/RegionRoot.jsx";
 
@@ -18,7 +18,11 @@ const router = createBrowserRouter([
 				element: <RegionRootLayout />,
 				children: [
 					{ index: true, element: <RegionPage /> },
-					{ path: "generation/:genID", element: <GenerationPage /> },
+					{ 
+						path: "generation/:genID", 
+						element: <GenerationPage />,
+						loader: evetGeneationLoader,
+					},
 				],
 			},
 		],
