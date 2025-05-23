@@ -17,7 +17,6 @@ const StyledNav = styled.nav`
 		transform: translateX(0.25rem);
 		transition: 0.5s ease;
 	}
-
 `
 
 export default function Navbar() {
