@@ -8,24 +8,24 @@ export default function usePokemones() {
 	const [nextURL, setNextURL] = useState('');
 	const [showScroll, setShowScroll] = useState(true);   // Variable for the Infinite Scroll
 
-	const fetchPokemones = async (url) => {
+	const fetchPokemonesDetails = async (url) => {
 		const res = await fetch(url);
-		const pokemonesInfoJSON = await res.json();
+		const pokemonesInfo = await res.json();
 
 		// Get info for modal
-		const abilities = pokemonesInfoJSON.abilities.map(a => a.ability.name );
-		const stats = pokemonesInfoJSON.stats.map(s => {
+		const abilities = pokemonesInfo.abilities.map(a => a.ability.name );
+		const stats = pokemonesInfo.stats.map(s => {
 			return {
 				name: s.stat.name,
 				base: s.base_stat,
 			}
 		});
-		const types = pokemonesInfoJSON.types.map(t => t.type.name);
+		const types = pokemonesInfo.types.map(t => t.type.name);
 
 		return {
-			id: pokemonesInfoJSON.id,
-			name: pokemonesInfoJSON.name,
-			image: pokemonesInfoJSON.sprites.other.dream_world.front_default || pokemonesInfoJSON.sprites.front_default,
+			id: pokemonesInfo.id,
+			name: pokemonesInfo.name,
+			image: pokemonesInfo.sprites.other.dream_world.front_default || pokemonesInfo.sprites.front_default,
 			abilities,
 			stats,
 			types,
@@ -39,14 +39,15 @@ export default function usePokemones() {
 		const { next, results } = listPokemones;
 
 		const newPokemones = await Promise.all(
-			results.map((pokemon) => fetchPokemones(pokemon.url))   // Move fetch logic to an external function
+			results.map((pokemon) => fetchPokemonesDetails(pokemon.url))
 		);
 
 		return { next, newPokemones };
 	}
 
-	const getPokemones = async () => {
-		const { next, newPokemones } = await fetchNewPokemones();
+	const getPokemones = async (limit = 20, offset = 0) => {
+		const url = `${URL_ENDPOINT}?limit=${limit}&offset=${offset}`
+		const { next, newPokemones } = await fetchNewPokemones(url);
 		setPokemones(newPokemones);
 		setNextURL(next)
 	}
@@ -64,7 +65,7 @@ export default function usePokemones() {
 
 	const searchPokemon = async (search) => {
 		const url = `${URL_ENDPOINT}${search.toLocaleLowerCase()}`;
-		return await fetchPokemones(url);
+		return await fetchPokemonesDetails(url);
 	}
 
 	return {pokemones, morePokemones, showScroll, searchPokemon};

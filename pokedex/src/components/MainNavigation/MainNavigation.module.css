@@ -1,0 +1,29 @@
+ul li a,
+button a {
+	padding: 0.25rem 0.5rem;
+	margin: 2rem 1rem;
+	color: var(--color-txt);
+	background-color: var(--color-bg);
+	border-radius: 0.5rem;
+	border: 1px solid var(--color-decoration);
+}
+
+ul li a:hover,
+button a:hover {
+	background-color: var(--color-bg-action);
+	color: var(--color-txt-action);
+	border-radius: 0.5rem;
+	border: 1px solid var(--color-decoration-action);
+}
+
+ul li a.active {
+	background-color: var(--color-bg-action);
+	color: var(--color-txt-action);
+	border-radius: 0.5rem;
+	border: 1px solid var(--color-decoration-action);
+}
+
+
+main nav button {
+	margin-bottom: 5rem;
+}

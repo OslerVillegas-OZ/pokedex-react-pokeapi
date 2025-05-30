@@ -6,14 +6,19 @@
 	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 	--color-bg: #fff;
+	--color-bg-action: #111;
 	--color-txt: #111;
+	--color-txt-action: #eee;
 	--color-card: #eee;
 	--color-decoration: #ccc;
+	--color-decoration-action: lightgrey;;
 }
 
 [class='dark'] {
 	--color-bg: #111;
+	--color-bg-action: #fff;
 	--color-txt: #eee;
+	--color-txt-action: #111;
 	--color-card: darkgray;
 	--color-decoration: lightgrey;
 }
@@ -24,3 +29,6 @@
 	transition: all 500ms ease-in-out;
 }
 
+main {
+	text-align: center;
+}

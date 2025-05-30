@@ -1,17 +1,40 @@
-import Navbar from "./components/Navbar.jsx";
-import Pokemones from "./components/Pokemones/Pokemones.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import RootLayout from "./pages/Root.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import GenerationPage, { loader as evetGeneationLoader } from "./Pages/GenerationPage.jsx";
+import RegionPage from "./pages/RegionPage.jsx";
+import RegionRootLayout from "./pages/RegionRoot.jsx";
+
+// Create Router
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <RootLayout />,
+		children: [
+			{ index: true, element: <HomePage /> },
+			{
+				path: "region",
+				element: <RegionRootLayout />,
+				children: [
+					{ index: true, element: <RegionPage /> },
+					{ 
+						path: "generation/:genID", 
+						element: <GenerationPage />,
+						loader: evetGeneationLoader,
+					},
+				],
+			},
+		],
+	},
+]);
 
 function App() {
-
 	return (
 		<>
-			<Navbar />
-			<div className="App flex flex-nowrap flex-col items-center">
-				<h1 className="App uppercase text-5xl font-mono font-bold text-center mt-4 pb-4">Pokédex</h1>
-				<Pokemones />
-			</div>
+			<RouterProvider router={router} />
 		</>
-	)
+	);
 }
 
-export default App
+export default App;
