@@ -1,9 +1,11 @@
 import { useParams, Link, useLoaderData } from "react-router-dom";
+import { useState } from 'react'
 
 import PokemonCard from "../components/PokemonCard";
 import pokeData from "../data/pokemonData";
 import usePokemones from "../hooks/usePokemones";
 import MainNavigation from "../components/MainNavigation/MainNavigation";
+import PokemonDetails from "../components/PokemonDetails";
 
 const URL_ENDPOINT = "https://pokeapi.co/api/v2/pokemon/?";
 
@@ -13,6 +15,19 @@ const getRegion = (id) => {
 };
 
 function GenerationPage() {
+	const [isPokemonDetailsOpen, setIsPokemonDetailsOpen] = useState({
+		show: false,
+		pokemon: {},
+	});
+
+	const showPokemonDetails = (pokemon) => {
+		setIsPokemonDetailsOpen({ show: true, pokemon });
+	};
+
+	const hidePokemonDetails = () => {
+		setIsPokemonDetailsOpen({ show: false, pokemon: {} });
+	};
+
 	// Get pokemon data
 	const pokeData = useLoaderData();
 
@@ -31,10 +46,14 @@ function GenerationPage() {
 			<p>
 				<span>{region.dexStart}</span> to {region.dexEnd}
 			</p>
+			<PokemonDetails {...isPokemonDetailsOpen} closeModal={hidePokemonDetails} />
 			<ol className="pokemon-container-list">
 				{pokeData.map((pokemon) => (
-					<li className={pokemon.id} key={pokemon.id}>
-						<PokemonCard {...pokemon} />
+					<li className='pokemon-card' key={pokemon.id}>
+						<PokemonCard 
+							{...pokemon} 
+							showModal={() => showPokemonDetails(pokemon)}
+						/>
 					</li>
 				))}
 			</ol>
@@ -99,8 +118,8 @@ export async function loader({ request, params }) {
 		// console.log(pokemonList);
 
 		//return newPokemones;
-		console.log(newPokemones)
+		console.log(newPokemones);
 
-		return newPokemones
+		return newPokemones;
 	}
 }
